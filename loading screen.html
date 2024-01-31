@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 200px;
+        }
+        .circle{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: rgb(0, 0, 0);
+
+        }
+        .border {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: rgb(0, 0, 0);
+            border-top: 2px dashed red;
+            border-left:  2px dashed rgb(255, 0, 0);
+            animation: surya 3s linear infinite;
+            color: aliceblue;
+        }
+        span {
+            position: relative;
+            color: aliceblue;
+            bottom: 170px;
+            left: 120px;
+        }
+
+        @keyframes surya {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(359deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="circle">
+            <div class="border"></div>
+            <span>Loading <br>&nbsp;Screen</span>
+        </div>
+    </div>
+</body>
+</html>
